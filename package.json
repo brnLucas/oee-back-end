@@ -1,0 +1,32 @@
+{
+  "name": "oee-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "migrate": "npx prisma migrate dev",
+    "build": "tsup src",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/luxon": "^3.3.0",
+    "@types/node": "^20.4.2",
+    "prisma": "^5.0.0",
+    "tsup": "^7.1.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "fastify": "^4.19.2",
+    "luxon": "^3.3.0",
+    "zod": "^3.21.4"
+  }
+}
